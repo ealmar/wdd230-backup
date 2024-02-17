@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template:  200px 200px 1frm 200px 100px / 200px 200px frm auto;
+  }
+  
+  header {
+    background: lightpink;
+    padding: 2rem;
+    grid-column: 1 / 4;
+  }
+  
+  .main-nav{
+    background-color: lightblue;
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+  
+  
+  main {
+    background: coral;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    height: 100%;
+  }
+  
+  .right-sidebar {
+    background: yellow;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+  
+  footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+  
+  .left-sidebar,
+  .right-sidebar {
+    padding: 1rem;
+  }
+  

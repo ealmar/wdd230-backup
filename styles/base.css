@@ -1,0 +1,400 @@
+/*main page */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --primary:#ddd;
+    --dark:#048;
+    --light:#99c24d;
+    --fondo:#e6c4a2;
+    --shadow: 3px 3px 9px rgba(44, 25, 25, 0.9);
+}
+
+
+
+
+.card-title p{
+  margin: 0;
+	padding: .25rem;
+	font-weight: 300;
+	font-size: .5rem;
+	font-family:'Times New Roman', Times, serif;
+}
+
+/*navigation part */
+
+.main-navigation{
+  position:sticky;
+  top:10px;
+  z-index: 99;
+  background: rgba(0,0,0,0.5);
+}
+
+#menu{
+  font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.current-date, .visits{
+
+  background-color: var(--primary);
+  text-align: center;
+  font-size: 1rem;
+  color: var(--dark);
+  text-shadow: var(--shadow);
+  padding-left: 15px ;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+html {
+    background-color: var(--primary);
+
+}
+
+.navigation li{
+  display: none;
+}
+
+.navigation li a{
+  display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.navigation li a:hover {
+
+  background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open li {
+  display: block;
+  width: 100%;
+}
+
+.header {
+    grid-column: 2;
+    position: relative;
+   
+    display: grid;
+    grid-template-columns: 1fr .75fr 1.25fr 1fr;
+    
+    grid-template-areas: 
+      'left-blk img name name'
+    
+}
+
+.header {
+    background-color: #048;
+    border-radius: 15px 15px 0 0;
+ /*   box-shadow: var(--shadow);*/
+    align-items: center;
+} 
+ 
+.header > img {
+    grid-area: img;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: 100px;
+    max-width: 100px;
+    padding: 10px 10px 10px 10px; 
+
+}
+
+.header .name {
+    grid-area: name;
+    text-align: center;
+    background-color: var(--dark); 
+    color:var(--primary);
+  
+
+}
+
+
+nav {
+  
+    background-color: #36454f;
+  
+
+  }
+
+    nav ul {
+      margin: 0;
+      padding: 10px; 
+      overflow: hidden;
+      color: white;
+    }
+  
+  nav ul li {
+    color: white;
+  }
+  
+  nav .menu ul li a {
+    display:inline-block;
+    align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: .25rem;
+      text-decoration: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  
+    nav li a:hover{
+      background-color: #4f5261;
+    }
+    
+    .header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200%;
+        border-radius: 20px;
+      }
+
+ 
+
+
+.name > h1 {
+    font-size: 2rem ;
+}
+
+ul li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+ul li h3 a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "fontello";
+    font-weight:600;
+}
+
+
+.line {
+    border: .6px solid rgb(11, 60, 123);
+}
+
+/* responsive menu */
+
+.responsive li{
+  display: block;
+}
+
+.responsive li a:hover{
+  background-color: #8a8e8a;
+  color: white;
+}
+
+.title-c {
+
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 1rem;
+    color: var(--dark);
+    text-shadow: var(--shadow);
+    padding-left: 15px ;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+    
+}
+
+.classes-detalle{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.foot {
+ /*  grid-area: foot;
+    grid-column: 2;
+    grid-row: 4; */
+    background-color: var(--dark);
+    color: var(--primary);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    font-size: 1.2em;
+       
+}
+
+.card1 {
+  padding: 10px;
+}
+.card1 ul{
+  text-align: left;
+}
+.card1, .card2, .card3{
+  box-sizing: border-box;
+
+}
+
+  .card1, card2,card3{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    position: relative;
+  }
+  
+  .card2 img{
+    display: block;
+    height: auto;
+    width: 100%;
+
+  }
+
+  .card1 h3{
+    background-color: rgb(150, 189, 233);
+    color: black;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+    
+  }             
+  
+  .card2{
+    position: relative;
+  }
+  .card1 h3{
+    top: 30px;
+  }
+  .card p {
+    padding:40px;
+  }
+       
+  .card1{
+    grid-area: card1;
+  }
+
+  .card2{
+    grid-area: card2;
+  }
+
+  .card3{
+    grid-area: card3;
+  }
+/*
+  .cards{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3";
+  }
+
+*/
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .cards{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-pic{
+    position: relative;
+    
+  }
+    .card-pic img{
+      height: 100%;
+      width: 100%;
+    }
+  
+  .today{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    opacity: .5;
+    background-color: white;
+    font-size: 1rem;
+  }
+
+  iframe {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: auto;
+    padding-right: 1rem;
+}
+
+  .hero {
+    position: relative;
+    
+
+  }
+  .hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .hero span {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+/******* weather *******/
+.today h3{
+  background-color: wheat;
+  color: #048;
+}
+
+
+.weather-info table{
+  width: 100%;
+  min-width: 200px;
+ /* background-image: url(../images/weather-image.jpeg);*/
+ background-color: #aaf465;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  opacity: .7;
+  counter-reset: white;
+
+}
+
+table{
+  border-collapse: collapse;
+}
+
+th,td{
+  border:1px solid black;
+  padding: 8px;
+}
+
+thead th{
+  width: 20%;
+}
+/***** titles ****/
+
+

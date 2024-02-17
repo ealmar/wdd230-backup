@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+:root{
+--primary:#ddd;
+--dark:#048;
+--light:#99c24d;
+--fondo:#e6c4a2;
+--shadow: 3px 3px 9px rgba(44, 25, 25, 0.9);
+--shadow2: 2px 8px 15px rgba(163,163,163, .5);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, helvetica, sans-serif;
+	background-color: var(--primary);
+}
+
+.formulario-label{
+display: block;
+font-weight: 700;
+padding: 10px;
+cursor: pointer;
+}
+
+
+.formulario-grupo-input{
+  position: relative;
+}
+
+
+.formulario-input{  
+    font-size: 1.2rem;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: var(--primary);
+    transition: .3s ease all;
+}
+
+.formulario-input:focus {
+    border: 3px solid var(--dark);
+    box-shadow: var(--shadow2);
+}
+
+/* working with the field status */
+.formulario-mensaje-exito{
+  color: green;
+  display: none; /*show it when there is not errors at the end */
+}
+
+.formulario-input-error{
+  font-size: .5em;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario-input-error-activo{
+  display: block;
+}
+
+.formulario-validacion-estado{
+  position:absolute;
+  right: 10px;
+  bottom: 8px;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+
+.formulario-grupo-btn-enviar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-btn{
+  height: 45px;
+  width: 60%;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top:3rem;
+  margin-bottom: 3rem;
+}
+
+.formulario-btn:hover{
+  box-shadow: 3px 3px 3px 3px rgba(163,163,163, 1);
+}
+
+.formulario-mensaje-exito{
+  display: none;
+  font-size: 15px;
+  color: green;
+  
+}
+
+.formulario-mensaje-exito-activo{
+  display: block;
+  
+}
+/*checking values*/
+
+.formulario-grupo-correcto .formulario-validacion-estado{
+color: green;
+opacity: 1;
+}
+.formulario-grupo-incorrecto .formulario-label{
+  color:red;
+}
+
+.formulario-grupo-incorrecto .formulario-validacion-estado{
+  color: red;
+  opacity: 1;
+}
+
+.formulario-grupo-incorrecto .formulario-input{
+  border: 2px solid red;
+  
+}
+/**********/
+ main {
+	margin: 20px auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	max-width: 500px;
+  width: 98%;
+}
+  
+  
+  
+  form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .navigation li .active{
+    color: #09396f;
+    background-color: orange;
+  }
+ 

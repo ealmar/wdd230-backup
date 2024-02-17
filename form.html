@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230, Esteban Almaraz. Form">
+    <meta name="author"      content="Esteban Almaraz Reyes">
+    <title>Esteban Almaraz - WDD 230 - Form</title>
+    <meta name="WDD-230"     content="Lessons of the curse">
+    <meta property = "og:image" content="images/westvalley.jpg">
+    <meta property = "og:title" content="Give your self time for meditation">
+    <meta property = "og:type"  content="Place to go">
+    <meta property = "og:url"   content="https://www.facebook.com/groups/74202481072">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css"      rel="stylesheet">
+    <link href="styles/larger.css"    rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+
+</head> 
+<body>
+   
+
+
+    <header class="header-wrapper">
+            <div class="header">
+                <img src="images/ear.webp" alt="Esteban Almaraz">
+                <div class="name">
+                    <h1>  Esteban Almaraz Reyes </h1>
+                </div> 
+            </div> 
+    </header>
+
+     
+    
+        <nav class="main-navigation">
+            <button id="menu"></button>
+                <ul class="navigation" id="primaryNav">
+                    <li><a href="index.html" title="home">Home</a></li>
+                    <li><a href="chamber/index.html" title="Hidalgo Chamber of Commerce">Chamber of Commerce</a></li>
+                    <li><a href="week01/chamber-site-plan.html" title="Site plan">Site Plan</a></li>
+                    <li><a href="form.html" class="active" title = "Form">Form</a></li>
+                </ul>
+            
+        </nav> 
+
+        
+        <main class="main-form">
+           
+              <form action="record.html" method = "get" class="formulario" id="formulario">
+
+                
+                <div class="formulario-grupo" id="grupo-usuario">
+                  <label for = "username" class="formulario-label">User name:</label>
+                  <div class="formulario-grupo-input">
+                    <input type="text" id="username" class="formulario-input" name="userName" 
+        
+                          placeholder="User Name" required>
+                          <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                        
+                  </div> 
+                  <p class="formulario-input-error">User name has to be from 4 to 16 characters</p>
+                </div>
+
+                <div class="formulario-grupo" id="grupo-password">
+                  <label for = "password" class="formulario-label">Password</label>
+                  <div class="formulario-grupo-input">
+                    <input type="password" id="password" class="formulario-input" name="password" 
+                            
+                          placeholder="Enter your password" required>
+                          <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                        
+                  </div> 
+                  <p class="formulario-input-error">Password require only at least 8 alphanumeric characters</p>
+                </div>
+
+                <div class="formulario-grupo" id="grupo-password2">
+                  <label for = "password2" class="formulario-label">Verify your password</label>
+                  <div class="formulario-grupo-input">
+                    <input type="password" id="password2" class="formulario-input" name="password2" 
+                          placeholder="Verify your password" required>
+                          <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                        
+                  </div> 
+                  <p class="formulario-input-error">Password missmatch</p>
+                </div>
+
+                <div class="formulario-grupo" id="grupo-email">
+                  <label for = "email" class="formulario-label">e-mail</label>
+                  <div class="formulario-grupo-input">
+                    <input type="email" id="email" class="formulario-input" name="email" 
+                          placeholder="myemail@abc.com" required>
+
+                          <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                        
+                  </div> 
+                  <p class="formulario-input-error">Email format abc@mail.com</p>
+                </div>
+                    
+                    <label for = "rate" class="formulario-label">Rate the website</label>
+                     <!--needs a javascript and css-->
+
+                      <div id="rangevalue">0</div>
+                      <input type="range" name = "rate" id="rate" min="1" max="10" value="1" step="1" list="rangevalues">
+
+                      <datalist id="rangevalues">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                    </datalist>
+
+                      
+                    <input type="Submit" id="submitbtn"  class="formulario-btn" value="My Rating">
+                        
+                     
+                   
+
+                </form>
+           
+          
+          </main>
+          <script src="scripts/form.js"></script>
+          <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <div class="foot">
+            <p>  &copy;<span id="currentYear"></span>| Esteban Almaraz | Salt Lake City, Utah, USA | <span id="last-updated"></span></p>
+        </div>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

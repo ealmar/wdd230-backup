@@ -1,0 +1,40 @@
+[
+    {
+        "familyNname":"Almaraz",
+        "dateMoveIn":"10/01/2021",
+        "sizeFamily":"5",
+        "visitedByBishop":"1",
+        "familyMembers":[
+            {
+            "name":"Lucas",
+            "gender":"m",
+            "birthdate":"12/11/1974"
+            },
+            {
+            "name":"Marcos",
+            "gender":"f",
+            "birthdate":"12/11/1976"  
+            }
+        ]
+
+    },
+    {
+        "familyNname":"Tolula",
+        "dateMoveIn":"12/01/2021",
+        "sizeFamily":"7",
+        "visitedByBishop":"0",
+        "familyMembers":[
+            {
+            "name":"Tulatao",
+            "gender":"m",
+            "birthdate":"12/11/1972"
+            },
+            {
+            "name":"Pucana",
+            "gender":"f",
+            "birthdate":"12/11/1978"  
+            }
+        ]
+
+    }
+]

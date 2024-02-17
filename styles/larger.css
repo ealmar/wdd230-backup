@@ -1,0 +1,58 @@
+@media screen and (min-width:750px){
+
+  .header{
+    display: grid;
+    grid-template-rows: 200px;
+  }
+  
+  #menu{
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    color: #000;
+    font-size: 1.6em;
+  }
+  
+
+  .name{
+    font-size: 1.5em;
+  }
+  
+  .navigation li{
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .card1{
+    grid-area: card1;
+  }
+
+  .card2{
+    grid-area: card2;
+  }
+
+  .cards{
+   display: grid;
+    grid-template-columns: 60% 5% 30% 5%;
+    grid-template-areas: 
+    "card1 . card2 ."
+    "card3 card3 card3 card3";
+    
+
+  }
+
+  .cards {
+    padding: 50px;
+  }
+
+  .card3{
+    margin-top: 50px;
+  }
+
+
+}
