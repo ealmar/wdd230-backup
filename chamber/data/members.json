@@ -1,0 +1,103 @@
+{
+    "companies": [
+      {
+        "company": "Grutas Tolantongo",
+        "phone-number":"772 721 7905",
+        "membership-level":3,
+        "pic-icon":"images/grutas-tolantongo-laura-rosales510x510.jpeg",
+        "type-of-company":"tourism",
+        "Address": [
+          {
+            "street":"San Cristobal S/N Ejido San Cristobal",
+            "city":"Cardonal, Hidalgo, Mexico",
+            "zipCode":"42375"
+          }
+        ]
+      },
+      {
+        "company": "Pastes el Portal",
+        "phone-number":"52-771-7971307",
+        "membership-level":2,
+        "pic-icon":"images/pastes-el-portal630x682.jpeg",
+        "type-of-company":"food",
+        "portal":"http://www.pasteselportal.com.mx/",
+        "Address": [
+          {
+            "street":"Street name",
+            "city":"Real del Monte, Hidalgo, Mexico",
+            "zipCode":"00000"
+          }
+        ]
+      },
+      {
+        "company": "Fabrica la Josefina",
+        "phone-number":"52 773 688 2304",
+        "membership-level":3,
+        "pic-icon":"images/fabrica-la-josefina-Clarisa-Cruz-Juarez382x520.jpeg",
+        "type-of-company":"Industrial",
+        "portal":"https://www.lajosefina.com.mx/index.php",
+        "Address": [
+          {
+            "street":"Jdn Hidalgo 14, San Francisco 1ra.",
+            "city":"Tepeji del Rio Ocampo, Hidalgo, Mexico",
+            "zipCode":"42850"
+          }
+        ]
+      },
+      {
+        "company": "La Cantera",
+        "phone-number":"52 773 688 1598",
+        "membership-level":2,
+        "pic-icon":"images/la-cantera-lina-kravchenko.jpeg",
+        "type-of-company":"tourism",
+        "portal":"https://www.facebook.com/lacanteratula/?locale=es_LA",
+        "Address": [
+          {
+            "street":"Del Tezontle s/n",
+            "city":"El Llano 2da Seccion,Tula Hidalgo, Mexico",
+            "zipCode":"42820"
+          }
+        ]
+      },
+      {
+        "company": "Grutas Tolantongo",
+        "phone-number":"772 721 7905",
+        "membership-level":2,
+        "type-of-company":"tourism",
+        "Address": [
+          {
+            "street":"San Cristobal S/N Ejido San Cristobal",
+            "city":"Cardonal, Hidalgo, Mexico",
+            "zipCode":"42375"
+          }
+        ]
+      },
+      {
+        "company": "Grutas Tolantongo",
+        "phone-number":"772 721 7905",
+        "membership-level":2,
+        "type-of-company":"tourism",
+        "Address": [
+          {
+            "street":"San Cristobal S/N Ejido San Cristobal",
+            "city":"Cardonal, Hidalgo, Mexico",
+            "zipCode":"42375"
+          }
+        ]
+      },
+      {
+        "company": "Grutas Tolantongo",
+        "phone-number":"772 721 7905",
+        "membership-level":2,
+        "type-of-company":"tourism",
+        "Address": [
+          {
+            "street":"San Cristobal S/N Ejido San Cristobal",
+            "city":"Cardonal, Hidalgo, Mexico",
+            "zipCode":"42375"
+          }
+        ]
+      }   
+      
+]
+}

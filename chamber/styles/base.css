@@ -1,0 +1,867 @@
+/*main page */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --primary:#ddd;
+    --dark:#048;
+    --light:#99c24d;
+    --fondo:#f16d01;
+    --shadow: 3px 3px 9px rgba(44, 25, 25, 0.9);
+}
+/***/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/***/
+
+
+
+.card-title p{
+  margin: 0;
+	padding: .25rem;
+	font-weight: 300;
+	font-size: .5rem;
+	font-family:'Times New Roman', Times, serif;
+}
+
+/*navigation part */
+
+#menu{
+  font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+}
+
+.main-navigation{
+  position:sticky;
+  top:10px;
+  z-index: 99;
+  background: rgba(0,0,0,0.5);
+}
+
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+
+html {
+    background-color: var(--primary);
+
+}
+
+.navigation li{
+  display: none;
+}
+
+.navigation li a{
+  display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.navigation li a:hover {
+
+  background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open li {
+  display: block;
+  width: 100%;
+}
+
+.header {
+    grid-column: 2;
+    position: relative;
+   
+    display: grid;
+    grid-template-columns: 1fr .75fr 1.25fr 1fr;
+    
+    grid-template-areas: 
+      'img name name name'
+    
+}
+
+.header {
+    background-color: #048;
+    border-radius: 15px 15px 0 0;
+ /*   box-shadow: var(--shadow);*/
+    align-items: center;
+} 
+ 
+.header > img {
+    grid-area: img;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: 100px;
+    max-width: 100px;
+    padding: 10px 10px 10px 10px; 
+
+}
+
+.header .name {
+    grid-area: name;
+    text-align: center;
+    background-color: var(--dark); 
+    color:var(--primary);
+  
+
+}
+
+
+nav {
+  
+    background-color: #36454f;
+  
+
+  }
+
+    nav ul {
+      margin: 0;
+      padding: 10px; 
+      overflow: hidden;
+      color: white;
+    }
+  
+  nav ul li {
+    color: white;
+  }
+  
+  nav .menu ul li a {
+    display:inline-block;
+    align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: .25rem;
+      text-decoration: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  
+    nav li a:hover{
+      background-color: #4f5261;
+    }
+    
+    .header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200%;
+        border-radius: 20px;
+      }
+
+ 
+
+
+.name > h1 {
+    font-size: 2rem ;
+}
+
+ul li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+ul li h3 a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "fontello";
+    font-weight:600;
+}
+
+
+.line {
+    border: .6px solid rgb(11, 60, 123);
+}
+
+/* responsive menu */
+
+.responsive li{
+  display: block;
+}
+
+.responsive li a:hover{
+  background-color: #8a8e8a;
+  color: white;
+}
+
+.current-date, .visits{
+
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 1rem;
+    color: var(--dark);
+    text-shadow: var(--shadow);
+    padding-left: 15px ;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+    
+}
+
+
+
+.classes-detalle{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.foot {
+ /*  grid-area: foot;
+    grid-column: 2;
+    grid-row: 4; */
+    background-color: var(--dark);
+    color: var(--primary);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    font-size: 1.2em;
+       
+}
+
+
+
+
+  .card1, .card2, .card3, .card4{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .hero{
+    grid-area:hero;
+  }
+       
+  .card1{
+    grid-area: card1;
+  }
+
+  .card2{
+    grid-area: card2;
+  }
+
+  .card3{
+    grid-area: card3;
+  }
+  
+  .card4{
+    grid-area: card4;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr );
+    grid-template-areas: 
+    "hero"
+    "card1"
+    "card2"
+    "card3"
+    "card4";
+  }
+
+.image-card{
+  position: relative;
+  display: block;
+}
+
+.image-card img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+}
+
+.overlay-text{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+
+.hero .image-card button {
+  position: absolute;
+ top: 70%;
+ right: 10%;
+ 
+  z-index: 9;
+  height: 10%;
+  width: 15%;
+  background-color:red;
+ 
+  border: 2px solid #152186;
+  border-radius: 5rem;
+  opacity: .7;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  cursor:pointer;
+}
+.hero .image-card button:hover{
+  background-color:#f16d01;
+  color: white;
+}
+
+.hero .image-card button p{
+  opacity:1;
+  color: white;
+}
+
+.overlay-text, .cards .hero .overlay-text{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-align: center;
+  position: absolute;
+}
+  .today{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    opacity: .5;
+    background-color: white;
+    font-size: 1rem;
+  }
+
+  .card3 .overlay-text-title {
+    color: #048;
+    font-size: .7em;
+  }
+ 
+  .card3 p{
+    color: #048;
+    font-size: .5em;
+  }
+
+  .calendar{
+    width: 400px;
+    height: auto;
+  
+  }
+  /**********/
+
+.header-wrapper .name{
+  font-size: .5em;
+}
+  .header-wrapper{
+    grid-area: header-wrapper;
+  }
+
+  .main-navigation{
+    grid-area:main-navigation;
+  }
+
+  .main-wrapper{
+    grid-area: main-wrapper;
+  }
+
+  .footer-wrapper{
+    grid-area:footer-wrapper;
+  }
+
+  .foot{
+    grid-area:foot;
+  }
+
+body{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "header-wrapper"
+  "main-navigation"
+  "main-wrapper"
+  "foot";
+}
+  
+
+  .sidebar figure img {
+    opacity:.8;
+    transform:scale(1.1);
+  }
+  
+  /**** center left side ****/
+
+  .sidebar section:nth-child(0){
+    position: absolute;
+  }
+
+
+  /**** center right side ****/
+
+  .discovery-content figure:nth-child(0){
+    position: absolute;
+  }
+  
+  
+  
+  .discovery-content figure p{
+    position: relative;
+    top: 60px;
+    color: rgb(226, 223, 240);
+    z-index: 9;
+    background-color: #6f7364;
+    max-width: 140px;
+    
+  }
+
+  .sidebar figure img{
+      border: 6px solid #d9c2a3;
+      transition: transform .5s;
+      box-shadow: 5px 5px 10px #6f7364;
+  }
+
+  .discovery-content figure img {
+
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+  } 
+/********* Discovery ********/
+
+.header img{
+ height: 100px;
+ width: 100px;
+}
+.sidebar .discovery-content{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.discovery-content{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.discovery-content figure {
+  border: thin #c0c0c0 solid;
+}
+
+
+
+.discovery-content figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic large sans-serif;
+  text-align: center;
+  
+}
+
+.discovery-content p{
+  padding: 2rem;
+  top: 10px;
+}
+.two-bars .sidebar{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar section{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.sidebar section figcaption{
+  margin-top: 1rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  z-index: 99;
+}
+
+
+.sidebar figure img {
+  opacity:.8;
+  transform:scale(1.1);
+
+}
+
+.sidebar figure img{
+    border: 6px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.active{
+  background-color: #e08a33;
+}
+
+/******* Join page **********/
+/*********  form Data *******/
+.business-information, .aplicant-information, .membership-level, .business-description{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#join-chamber{
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#join-chamber .sub-title{
+  font-family: fontello; 
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+form fieldset{
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: .8rem 2%;
+}
+
+form legend{
+  color: #445ba9;
+  margin: 0 .5rem;
+  text-align: left;
+}
+
+form label .top, form div{
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: 1rem;
+}
+
+form label.top input, form label.top select{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: black;
+  width: 100%;
+  max-width: 20rem;
+  
+}
+
+form label.sbs{
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+ 
+}
+
+form input.submitBtn{
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+
+}
+textarea{
+  width: 100%;
+  height: 120px;
+}
+
+
+form label.top input:required{
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+  border-left: green solid 6px;
+
+}
+/***** table membership format *******/
+
+.benefits .title{
+  background-color: #9c2c13;
+  color: whitesmoke;
+  font-size: 3rem;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.benefit thead .subtitle{
+  font-size: .7rem;
+
+  color: whitesmoke;
+}
+.benefits{
+  width: 100%;
+ 
+}
+
+.benefits td{
+  border: .5px solid rgba(10, 10, 10, 0.841);
+  padding: 8px;
+}
+
+.benefits tr:nth-child(even){background-color: hsl(100, 14%, 91%);}
+.benefits tr:hover{background-color: rgba(32, 249, 8, 0.3);}
+
+.benefits th:nth-child(2){background-color: rgb(205, 127, 50, .5);}
+.benefits th:nth-child(3){background-color: rgb(192, 192, 192, .5);}
+.benefits th:nth-child(4){background-color: rgb(136, 215, 136, .5);}
+.benefits th:nth-child(5){background-color: rgb(255, 215, 0, .5);}
+
+.benefits th:nth-child(1){
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+}
+
+/***t** end join form ***/
+
+/***** extra format footer */
+.business-information .foot-top{
+  width: 100%;
+  margin-block-end: auto;
+  font-size: .5rem;
+}
+.address-of-chamber{
+  font: rgb(38, 95, 32);
+}
+
+.foot-top{
+  width: 100%;
+}
+
+/********* directory ************/
+
+
+.directory-menu{
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+ 
+  text-align: center;
+  }
+  
+  .directory-menu button {
+    padding: 1rem;
+    font-weight: 700;
+  }
+  
+  section{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+  box-shadow: 5px 5px 10px #6f7364;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:5px;
+    align-items:center;
+  }
+
+  .grid section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+  }
+
+  .grid img {
+    height: 30px;
+    max-width: 100%;
+    
+  
+  }
+
+  .list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+
+  .grid section a{
+    font-size: .6rem;
+  }
+
+  .list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+.list section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .list section img{
+    display: none;
+  }
+
+  .list section:nth-child(even) {
+    background-color: #bed;
+  }
+  .list section h3{
+    font-size: 1rem;
+  }
+
+  .list section a{
+    font-size: .8rem;
+  }
+
+
+  /********* weather part ********/
+  .card4 .image-card .overlay-days{
+    height: auto;
+    width: 100%;
+  }
+
+  .card4 img{
+    width: 100%;
+    height: auto;
+  }
+
+  .card4 .overlay-days{
+    display: grid;
+    /*title, temp, description, icon */
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+  }
+
+
+.card4 .overlay-days{
+  position: relative;
+  top: -120px;
+  color: wheat;
+}
+  
+
+
+  .card4 .image-card .overlay-days .title{
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+
+
+.card4 #current-temp{
+  grid-column: 1;
+  grid-row: 2;
+}
+.card4 #caption-desc{
+  grid-column: 1;
+  grid-row: 3;
+  
+}
+
+.card4 .weather-icon{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.overlay-days #current-temp h2,h3{
+  font-size: .8rem;
+  color: #333;
+}
+
+.image-card {
+ width: 100%;
+ height: auto;
+}
+
+.image-card img{
+  width: 100%;
+  height: auto;
+}
+
+/******* css weather table ****/
+
+
+
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	
+	font-size: 1rem;
+}
+
+tr:first-child th, .highlight {
+/*	background-color: var(--back);*/
+/*	color: var(--forelight);*/
+}
+
+table, td, th{
+  border: 1px solid black;
+  font-size: .9rem;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+
+
+
+#current-caption-desc h3, #current-caption-desc-24 h3, #current-caption-desc-48 h3{
+  font-size: .7rem;
+color: wheat;
+}
+#current-temp h2, #current-temp-24 h2, #current-temp-48 h2{
+  font-size: .7rem;
+color: wheat;
+}
+
+
+table td figure img{
+  font-size: .7rem;
+  color: wheat;
+}
+
+.image-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.imagen-card img{
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
