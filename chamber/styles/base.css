@@ -651,9 +651,7 @@ form label.top input:required:valid{
   margin-block-end: auto;
   font-size: .5rem;
 }
-.address-of-chamber{
-  font: rgb(38, 95, 32);
-}
+
 
 .foot-top{
   width: 100%;
